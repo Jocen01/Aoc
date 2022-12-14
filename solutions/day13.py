@@ -28,12 +28,7 @@ def comp(left, right):
         return 1
     return 0
 
-def buildlist(string):
-    l = []
-    op = 0
-    for c in string:
-        if c == "[":
-            op += 1
+
 
 
 import ast
