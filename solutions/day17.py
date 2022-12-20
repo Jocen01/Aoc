@@ -160,7 +160,7 @@ for i in range(5000):
         print("FEL")
     S = (  (gasPos % gasLen) , (i%5),encode(high))#
     if S in states and not found:
-        #print(i,S)
+        print(i,S)
         #print(i,states[S])
         #for y in range(states[S][0]-5,states[S][0]+5)[::-1]:
         #    for x in range(9):
@@ -184,13 +184,13 @@ for i in range(5000):
         states[S] = (high,i)
         if i == 405:
             print(S)
-    if i == 405:
-        print(S,i,high)
-        for y in range(high-5,high+5)[::-1]:
-            for x in range(9):
-                print(tower[(x,y)],end="")
-            print()
-        print()
+    #if i == 405:
+    #    print(S,i,high)
+    #    for y in range(high-5,high+5)[::-1]:
+    #        for x in range(9):
+    #            print(tower[(x,y)],end="")
+    #        print()
+    #    print()
 
     if i == br:
         adHigh = dH * ((1000000000000-i-1)//di)
